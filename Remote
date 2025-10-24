@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+.h{
+        background-color: rgb(105, 195, 247);
+        text-align: center;
+        color: aliceblue;
+
+    }
+        .b:hover{
+    background-color: black;
+    color: aliceblue;
+    font-size: small;
+    }
+    .b{
+        padding: 10px;
+        margin: 30px;
+
+    }
+
+
+
+</style>
+<body>
+    <form>
+        <h1 class="h">FORM</h1>
+        <label style="display: block;">Enter Your Name</label>
+        <input type="text" placeholder="Enter Your Name" required pattern="[A-Za-z\s]+"><br>
+        <label style="display: block;">Email address</label>
+        <input type="email" placeholder="Email" required><br>
+        <label style="display: block;">City Address</label>
+        <input type="address" placeholder="address" required><br>
+        <label style="display: block;">Phone Number</label>
+        <input type="number" placeholder="Number" required pattern="03[0-9]{9}"><br>
+        <label style="display: block;">Password</label>
+        <input type="password" placeholder="password" required><br>
+        <label>Gender</label>
+        <label for="">Male</label>
+        <input type="radio" name="Gender">
+        <label for="">Female</label>
+        <input type="radio" name="Gender"><br>
+        <button type="submit" class="b">Submit</button>
+
+
+    </form>
+</body>
+</html>
